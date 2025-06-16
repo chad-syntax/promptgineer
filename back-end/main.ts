@@ -1,4 +1,14 @@
 import fastify from 'fastify';
+import { AgentsmithClient } from '@agentsmith/sdk';
+import type { Agency } from '../agentsmith/agentsmith.types';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const client = new AgentsmithClient<Agency>(
+  process.env.AGENTSMITH_API_KEY!,
+  '0c26f1b2-70f3-43dc-915e-77800d800f44'
+);
 
 const app = fastify();
 
@@ -14,11 +24,20 @@ app.get('/', (req, res) => {
   res.send('Hello World');
 });
 
-app.get<{ Params: { id: string } }>(
+app.post<{ Body: string; Params: { id: string } }>(
   '/api/v1/problem/:id/submit',
-  (req, res) => {
-    console.log('Problem ID:', req.params.id);
-    res.send({ message: 'Hello World' });
+  async (req, res) => {
+    const body = JSON.parse(req.body);
+    const { input, output } = body;
+    if (!input || !output) {
+      return res.status(400).send({ error: 'Input and output are required' });
+    }
+    const prompt = await client.getPrompt('problem-give-only-json@0.0.1');
+    const result = await prompt.execute({
+      input,
+      output,
+    });
+    res.send({ result });
   }
 );
 

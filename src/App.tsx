@@ -8,7 +8,11 @@ function App() {
 
   const handleTestApi = async () => {
     const response = await fetch(
-      'http://localhost:3000/api/v1/problem/1/submit'
+      'http://localhost:4000/api/v1/problem/1/submit',
+      {
+        method: 'POST',
+        body: JSON.stringify({ input: 'foo', output: 'foo' }),
+      }
     );
     const data = await response.json();
     console.log(data);
