@@ -12,7 +12,7 @@ export type Agency = {
             slug: 'identify-yourself';
             versions: {
                 latest: { uuid: 'f797581f-34d9-4955-a6b6-3a0f5415499d'; version: '0.1.0'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string; variables: { 'firstName': string; 'lastName': string } };
-                '0.1.1': { uuid: '30f22338-fee7-4a4e-8b4a-13553c17be43'; version: '0.1.1'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string };
+                '0.1.1': { uuid: '30f22338-fee7-4a4e-8b4a-13553c17be43'; version: '0.1.1'; config: { "models": ["google/gemini-2.5-flash-lite-preview-06-17"], "stream": true, "temperature": 0.5 }; content: string };
                 '0.1.0': { uuid: 'f797581f-34d9-4955-a6b6-3a0f5415499d'; version: '0.1.0'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string; variables: { firstName: string; lastName: string } };
                 '0.0.1': { uuid: '20bb47d1-e161-471e-a7ec-1f669496f9ba'; version: '0.0.1'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string; variables: { name: string } }
             }
@@ -25,7 +25,22 @@ export type Agency = {
                 latest: never;
                 '0.0.1': { uuid: 'e0ebd8e6-d58d-4347-9563-e008e06274c5'; version: '0.0.1'; config: { "models": ["arcee-ai/arcee-blitz"], "temperature": 1 }; content: string; variables: { input: string; output: string } }
             }
+        };
+        'support-chat': {
+            uuid: 'dafdfd16-0315-40c7-af5a-99a2f66d5eb5';
+            name: 'Support Chat';
+            slug: 'support-chat';
+            versions: {
+                latest: { uuid: '244736ab-44d8-4693-9709-c8f89be1c719'; version: '0.0.1'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string; variables: { 'userMessage': string } };
+                '0.0.2': { uuid: '02067cc7-bff9-4e85-9152-636f9eb412a0'; version: '0.0.2'; config: { "models": ["openrouter/auto"], "stream": true, "temperature": 1 }; content: string; variables: { userMessage: string } };
+                '0.0.1': { uuid: '244736ab-44d8-4693-9709-c8f89be1c719'; version: '0.0.1'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string; variables: { userMessage: string } }
+            }
         }
     };
-    globals: {}
+    globals: {
+        gitHubUrl: 'https://github.com/chad-syntax/agentsmith';
+        supportUrl: 'https://agentsmith.app/support';
+        companyName: 'Agentsmith';
+        supportEmail: 'support@agentsmith.app'
+    }
 };
