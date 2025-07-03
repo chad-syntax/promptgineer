@@ -1,5 +1,5 @@
 import fastify from 'fastify';
-import { AgentsmithClient } from '@agentsmith/sdk';
+import { AgentsmithClient } from '@agentsmith-app/sdk';
 import type { Agency } from '../agentsmith/agentsmith.types';
 import dotenv from 'dotenv';
 
