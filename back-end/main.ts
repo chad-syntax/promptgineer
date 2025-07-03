@@ -32,7 +32,7 @@ app.post<{ Body: string; Params: { id: string } }>(
     if (!input || !output) {
       return res.status(400).send({ error: 'Input and output are required' });
     }
-    const prompt = await client.getPrompt('problem-give-only-json@0.0.1');
+    const prompt = await client.getPrompt('compare-input-output@0.0.1');
     const result = await prompt.execute({
       input,
       output,
