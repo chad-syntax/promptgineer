@@ -8,11 +8,11 @@ export type Agency = {
     prompts: {
         'problem-give-only-json': {
             uuid: '013b8568-2872-4eee-9a9a-56fbb3d4f613';
-            name: 'Problem: Give only JSON';
+            name: 'Compare input / output';
             slug: 'problem-give-only-json';
             versions: {
-                'latest': { uuid: 'e0ebd8e6-d58d-4347-9563-e008e06274c5'; version: '0.0.1'; config: any; content: string; variables: { 'input': string; 'output': string } };
-                '0.0.1': { uuid: 'e0ebd8e6-d58d-4347-9563-e008e06274c5'; version: '0.0.1'; config: any; content: string; variables: { 'input': string; 'output': string } }
+                latest: never;
+                '0.0.1': { uuid: 'e0ebd8e6-d58d-4347-9563-e008e06274c5'; version: '0.0.1'; config: { "models": ["arcee-ai/arcee-blitz"], "temperature": 1 }; content: string; variables: { input: string; output: string } }
             }
         }
     };
