@@ -12,7 +12,7 @@ export type Agency = {
             slug: 'identify-yourself';
             versions: {
                 latest: { uuid: 'f797581f-34d9-4955-a6b6-3a0f5415499d'; version: '0.1.0'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string; variables: { 'firstName': string; 'lastName': string } };
-                '0.1.1': { uuid: '30f22338-fee7-4a4e-8b4a-13553c17be43'; version: '0.1.1'; config: { "models": ["google/gemini-2.5-flash-lite-preview-06-17"], "temperature": 0.5 }; content: string };
+                '0.1.1': { uuid: '30f22338-fee7-4a4e-8b4a-13553c17be43'; version: '0.1.1'; config: { "models": ["google/gemini-2.5-flash-lite-preview-06-17"], "stream": true, "temperature": 0.5 }; content: string };
                 '0.1.0': { uuid: 'f797581f-34d9-4955-a6b6-3a0f5415499d'; version: '0.1.0'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string; variables: { firstName: string; lastName: string } };
                 '0.0.1': { uuid: '20bb47d1-e161-471e-a7ec-1f669496f9ba'; version: '0.0.1'; config: { "models": ["openrouter/auto"], "temperature": 1 }; content: string; variables: { name: string } }
             }
