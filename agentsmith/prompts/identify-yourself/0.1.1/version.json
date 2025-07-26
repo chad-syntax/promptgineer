@@ -5,10 +5,10 @@
       "moonshotai/kimi-k2"
     ],
     "stream": true,
-    "temperature": 0.5
+    "temperature": 0.55
   },
   "status": "DRAFT",
   "version": "0.1.1",
   "created_at": "2025-07-03T14:03:25.458439+00:00",
-  "updated_at": "2025-07-24T21:08:56.652733+00:00"
+  "updated_at": "2025-07-26T00:16:55.560401+00:00"
 }
