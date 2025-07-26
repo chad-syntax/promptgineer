@@ -5,10 +5,10 @@
       "arcee-ai/arcee-blitz"
     ],
     "stream": true,
-    "temperature": 1
+    "temperature": 0.9
   },
   "status": "DRAFT",
   "version": "0.0.1",
   "created_at": "2025-06-16T18:35:13.132801+00:00",
-  "updated_at": "2025-07-23T19:40:02.346573+00:00"
+  "updated_at": "2025-07-26T00:26:26.11295+00:00"
 }
