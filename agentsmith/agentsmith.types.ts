@@ -45,7 +45,7 @@ export type Prompt__compare_input_output = {
   };
 };
 export type PromptConfig__identify_yourself__0_1_2 = {
-  models: ['moonshotai/kimi-k2'];
+  models: ['cohere/command-r'];
   temperature: number;
 };
 export type PromptVersion__identify_yourself__0_1_2 = {
