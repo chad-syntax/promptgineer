@@ -4,6 +4,7 @@ Your task is to provide specific information about yourself. You MUST follow the
 
 1.  **Identify Your Model:** State the exact model name and version number you are.
 2.  **Identify Your Creator:** State the full name of the company that created you.
+{% if showLink %}3.  **Identify Your Creator's Website:** State the website of the company that created you.{% endif %}
 
 **Response Format:**
 
@@ -12,7 +13,7 @@ You MUST provide your response in the following format, and ONLY this format. Do
 ```
 MODEL: [Your Exact Model Name and Version Number Here]
 CREATOR: [Full Name of Your Creating Company Here]
-LINK: [Link to Your Creating Company's Website]
+{% if showLink %}LINK: [Link to Your Creating Company's Website]{% endif %}
 ```
 
 **Example (DO NOT COPY THIS EXAMPLE, use your own information):**
@@ -20,9 +21,9 @@ LINK: [Link to Your Creating Company's Website]
 ```
 MODEL: gpt-4o
 CREATOR: OpenAI
-LINK: [openai.com](https://openai.com)
+{% if showLink %}LINK: [openai.com](https://openai.com){% endif %}
 ```
 
 **Your Response:**
 
-Begin your response *immediately* with "MODEL:", followed by your model information. Then, on a new line, begin with "CREATOR:", followed by your creator information. Then on a new line begin with "LINK:", followed by your creator's website in markdown format. Do not include any text before "MODEL:" or after the link information.
+Begin your response *immediately* with "MODEL:", followed by your model information. Then, on a new line, begin with "CREATOR:", followed by your creator information. {% if showLink %}Then on a new line begin with "LINK:", followed by your creator's website in markdown format. Do not include any text before "MODEL:" or after the link information.{% else %} Do not include any text before "MODEL:" or after the creator information. {% endif %}
