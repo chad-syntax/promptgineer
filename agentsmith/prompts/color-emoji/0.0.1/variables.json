@@ -1,0 +1,11 @@
+[
+  {
+    "name": "color",
+    "type": "STRING",
+    "uuid": "fd89fa00-cb9b-45bc-bb19-0fe0a36e2a2e",
+    "required": true,
+    "created_at": "2025-07-28T23:23:29.692526+00:00",
+    "updated_at": "2025-07-28T23:23:29.692526+00:00",
+    "default_value": null
+  }
+]

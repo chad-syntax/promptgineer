@@ -1,0 +1,13 @@
+{
+  "uuid": "eb55bb94-a15f-4955-a9b1-9ee1750ab10c",
+  "config": {
+    "models": [
+      "mistralai/ministral-3b"
+    ],
+    "temperature": 0.8
+  },
+  "status": "DRAFT",
+  "version": "0.1.3",
+  "created_at": "2025-07-28T23:15:39.621059+00:00",
+  "updated_at": "2025-07-28T23:24:25.726964+00:00"
+}

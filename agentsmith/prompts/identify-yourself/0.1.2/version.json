@@ -1,13 +1,11 @@
 {
   "uuid": "42d05b44-1a33-4eb5-aaf8-587cd4b08fd5",
   "config": {
-    "models": [
-      "moonshotai/kimi-k2"
-    ],
-    "temperature": 0.55
+    "models": ["cohere/command-r"],
+    "temperature": 0.8
   },
   "status": "DRAFT",
   "version": "0.1.2",
   "created_at": "2025-07-28T18:11:38.332207+00:00",
-  "updated_at": "2025-07-28T18:13:12.074496+00:00"
+  "updated_at": "2025-07-28T18:25:28.251765+00:00"
 }
