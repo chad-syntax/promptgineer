@@ -8,7 +8,9 @@ export type PromptVariables__compare_input_output__0_0_1 = {
   input: string;
   output: string;
 };
-export type PromptVariables__identify_yourself__0_1_2 = never;
+export type PromptVariables__identify_yourself__0_1_2 = {
+  showLink: boolean;
+};
 export type PromptVariables__identify_yourself__0_1_1 = never;
 export type PromptVariables__identify_yourself__0_1_0 = {
   firstName: string;
