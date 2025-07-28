@@ -43,7 +43,6 @@ export type Prompt__compare_input_output = {
 };
 export type PromptConfig__identify_yourself__0_1_1 = {
   models: ['moonshotai/kimi-k2'];
-  stream: true;
   temperature: number;
 };
 export type PromptVersion__identify_yourself__0_1_1 = {
@@ -76,7 +75,7 @@ export type Prompt__identify_yourself = {
   name: 'Identify Yourself';
   slug: 'identify-yourself';
   versions: {
-    latest: PromptVersion__identify_yourself__0_1_0;
+    latest: PromptVersion__identify_yourself__0_1_1;
     '0.1.1': PromptVersion__identify_yourself__0_1_1;
     '0.1.0': PromptVersion__identify_yourself__0_1_0;
     '0.0.1': PromptVersion__identify_yourself__0_0_1;
